@@ -1,14 +1,36 @@
 import LogoTyping from "./LogoTyping";
 
-function Header() {
+type HeaderProps = {
+  currentPath: string;
+  onNavigate: (path: string) => void;
+};
+
+function Header({ currentPath, onNavigate }: HeaderProps) {
+  const links = [
+    { path: "/resume", label: "resume" },
+    { path: "/experience", label: "experience" },
+    { path: "/contact", label: "contact" },
+  ];
+
   return (
     <header className="header">
-      <LogoTyping />
+      <LogoTyping onNavigate={onNavigate} />
       <nav>
         <ul className="nav-list">
-          <li className="nav-list-item">resume</li>
-          <li className="nav-list-item">experience</li>
-          <li className="nav-list-item">contact</li>
+          {links.map((link) => (
+            <li className="nav-list-item" key={link.path}>
+              <a
+                aria-current={currentPath === link.path ? "page" : undefined}
+                href={link.path}
+                onClick={(event) => {
+                  event.preventDefault();
+                  onNavigate(link.path);
+                }}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

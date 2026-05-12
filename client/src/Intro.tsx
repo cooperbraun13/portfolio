@@ -7,11 +7,10 @@ function Intro() {
         <h1>hi, im cooper!</h1>
         <p>
           im currently a rising senior at gonzaga university studying computer
-          science. im interested in all things backend development (now trying
-          to learn frontend, hopefully the site looks ok :D), system design, ai.
-          im especially interested in how ai can help accelerate the progress of
-          software development and help us build better tools, systems, and
-          products for the betterment of the world.
+          science. im interested in fullstack development, system design, and
+          ai. im especially interested in how ai can help accelerate the
+          progress of software development and help us build better tools,
+          systems, and products for the betterment of the world.
         </p>
       </div>
 

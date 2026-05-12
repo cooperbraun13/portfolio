@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 
-export default function LogoTyping() {
+type LogoTypingProps = {
+  onNavigate: (path: string) => void;
+};
+
+export default function LogoTyping({ onNavigate }: LogoTypingProps) {
   const text = "> cooper braun";
   const [displayed, setDisplayed] = useState("");
 
@@ -16,7 +20,14 @@ export default function LogoTyping() {
   }, []);
 
   return (
-    <a href="/" className="logo">
+    <a
+      href="/"
+      className="logo"
+      onClick={(event) => {
+        event.preventDefault();
+        onNavigate("/");
+      }}
+    >
       {displayed}
       <span className="cursor">_</span>
     </a>
