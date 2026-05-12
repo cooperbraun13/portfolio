@@ -1,3 +1,5 @@
+import cooperPhoto from "./assets/coopandeme.jpg";
+
 function Intro() {
   return (
     <section className="intro">
@@ -13,7 +15,7 @@ function Intro() {
         </p>
       </div>
 
-      <img className="photo" src="/src/assets/coopandeme.jpg" alt="Cooper" />
+      <img className="photo" src={cooperPhoto} alt="Cooper" />
     </section>
   );
 }
