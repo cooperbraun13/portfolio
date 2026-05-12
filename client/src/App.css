@@ -150,6 +150,19 @@ body {
   margin-bottom: 18px;
 }
 
+.contact-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
 .logo {
   font-family: "JetBrains Mono", monospace;
   font-size: 1.2rem;

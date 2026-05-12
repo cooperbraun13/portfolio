@@ -35,7 +35,19 @@ function ExperiencePage() {
     <main className="page">
       <article className="text-page">
         <h1>experience</h1>
-        <h2>role title</h2>
+        <h2>Implementation Intern</h2>
+        <p>
+          Add a paragraph about the role, the team, what you built, and the
+          impact of your work.
+        </p>
+
+        <h2>Research Assistant</h2>
+        <p>
+          Add a paragraph about the role, the team, what you built, and the
+          impact of your work.
+        </p>
+
+        <h2>Software Engineer Intern</h2>
         <p>
           Add a paragraph about the role, the team, what you built, and the
           impact of your work.
