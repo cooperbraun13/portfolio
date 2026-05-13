@@ -111,15 +111,44 @@ body {
   max-width: 700px;
 }
 
+.experience-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .text-page h2 {
   font-size: clamp(1.4rem, 3vw, 2rem);
-  margin: 32px 0 12px;
+  line-height: 1.1;
+  margin: 0;
 }
 
 .text-page p {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 1.5;
   margin: 0;
+}
+
+.experience-list {
+  margin-top: 44px;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.3fr);
+  gap: 28px;
+  padding: 30px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.experience-item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.experience-role {
+  margin-top: 8px;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.68);
 }
 
 .resume-frame {
@@ -221,6 +250,11 @@ body {
   .page-heading {
     align-items: flex-start;
     flex-direction: column;
+    gap: 14px;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
     gap: 14px;
   }
 }
